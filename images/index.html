@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Blur/Sharpen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <form action="process.php" method="POST" enctype="multipart/form-data" class="bg-white p-6 rounded shadow-md w-96">
+    <h2 class="text-xl font-bold mb-4 text-center">Image Blur/Sharpen</h2>
+    <input type="file" name="image" accept="image/*" required class="mb-4 w-full">
+    <select name="filter" required class="mb-4 w-full p-2 border rounded">
+      <option value="blur">Blur</option>
+      <option value="sharpen">Sharpen</option>
+    </select>
+    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Apply Filter</button>
+  </form>
+</body>
+</html>
